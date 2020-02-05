@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rhombus test!{% endblock %}
+{% block stylesheets %}
+    <link href="../../templates/rhombus/styles/rhombus-style.css" rel="stylesheet"></link>
+{% endblock %}
+{% block body %}
+
+	<div class="rhombus-container-style">
+		<div class="rhombus-style">
+            <a href="{{ path(rhombus_changeColor) }}"><p>
+                Click me to change color
+            </p></a>
+        </div>
+	</div>
+
+            <script>
+            console.log(window.location.pathname)
+            </script>
+
+{% endblock %}
